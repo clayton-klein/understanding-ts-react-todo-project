@@ -1,14 +1,15 @@
 form {
-  width: 90%;
-  max-width: 40rem;
   margin: 2rem auto;
+  max-width: 40rem;
+  width: 90%;
 }
 
 .form-control {
   margin-bottom: 1rem;
 }
 
-label, input {
+label,
+input {
   display: block;
   width: 100%;
 }
@@ -18,22 +19,22 @@ label {
 }
 
 input {
-  font: inherit;
   border: 1px solid #ccc;
+  font: inherit;
   padding: 0.25rem;
 }
 
 input:focus {
-  outline: none;
   border-color: #50005a;
+  outline: none;
 }
 
 button {
   background: #50005a;
   border: 1px solid #50005a;
   color: white;
-  padding: 0.5rem 1.5rem;
   cursor: pointer;
+  padding: 0.5rem 1.5rem;
 }
 
 button:focus {

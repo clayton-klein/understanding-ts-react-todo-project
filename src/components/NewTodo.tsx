@@ -24,7 +24,7 @@ export default function NewTodo(props: NewTodoProps): JSX.Element {
   }
   return (
     <form onSubmit={todoSubmitHandler}>
-      <div>
+      <div className="form-control">
         <label htmlFor="todo-text">ToDo Text</label>
         <input id="todo-text" ref={textInputRef} type="text" />
       </div>

@@ -20,7 +20,7 @@ export default function App(): JSX.Element {
 
   function todoDeleteHandler(todoId: string) {
     setTodos((prevTodos) => {
-      return prevTodos.filter(todo => todo.id !== todoId);
+      return prevTodos.filter((todo) => todo.id !== todoId);
     });
   }
 
@@ -31,3 +31,21 @@ export default function App(): JSX.Element {
     </>
   );
 }
+//==================== General Notes ===========================
+
+/**
+ * we can extract the "signature" of an object using "typeof",
+ * hover over the type bellow to see that it has the same 
+ * properties and types that "user" has and if we change
+ * something in user, it'll automatically change in the type
+ * "UserAttributes" as well.
+ */ 
+const user = {
+  id: 1,
+  name: "Clayton",
+  age: 36,
+  isAdmin: true,
+  birthDate: new Date("1987-01-21"),
+};
+
+type UserAttributes = typeof user;

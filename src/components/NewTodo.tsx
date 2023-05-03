@@ -6,6 +6,10 @@ interface NewTodoProps {
   onAddTodo: (todoText: string) => void;
 }
 
+/**
+ * if we needed to pass JSX elements or React components as 
+ * "children" in "props", the type would be "React.ReactNode".
+ */ 
 export default function NewTodo(props: NewTodoProps): JSX.Element {
   /**
    * useRef hook has a generic type,so we need to specify
